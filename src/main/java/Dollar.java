@@ -12,8 +12,6 @@ public class Dollar {
 
     @Override
     public boolean equals(Object obj) {
-        if (! obj.getClass().equals(Dollar.class))
-            return false;
         Dollar dollar = (Dollar) obj;
         return amount == dollar.amount;
     }
