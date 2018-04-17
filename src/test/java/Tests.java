@@ -22,4 +22,16 @@ class Tests {
         assertEquals(15, product.amount);
     }
 
+    @Test
+    public void testEquality() {
+        // given
+        Dollar five1 = new Dollar(5);
+        Dollar five2 = new Dollar(5);
+
+        // when
+
+        // then
+        assertTrue(five1.equals(five2));
+    }
+
 }
