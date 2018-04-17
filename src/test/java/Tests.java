@@ -27,11 +27,13 @@ class Tests {
         // given
         Dollar five1 = new Dollar(5);
         Dollar five2 = new Dollar(5);
+        Dollar six = new Dollar(6);
 
         // when
 
         // then
         assertTrue(five1.equals(five2));
+        assertFalse(five1.equals(six));
     }
 
 }
