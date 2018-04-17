@@ -14,6 +14,12 @@ class Tests {
 
         //then
         assertEquals(10, five.amount);
+
+        //when2
+        five.times(3);
+
+        //then2
+        assertEquals(15, five.amount);
     }
 
 }

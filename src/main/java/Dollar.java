@@ -1,12 +1,12 @@
 public class Dollar {
 
-    public int amount;
+    int amount;
 
-    public Dollar(int amount) {
+    Dollar(int amount) {
         this.amount = amount;
     }
 
-    public void times(int multiplier) {
+    void times(int multiplier) {
         this.amount *= multiplier;
     }
 }
