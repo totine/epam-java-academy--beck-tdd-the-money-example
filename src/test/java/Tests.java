@@ -10,16 +10,16 @@ class Tests {
         Dollar five = new Dollar(5);
 
         //when
-        five.times(2);
+        Dollar product = five.times(2);
 
         //then
-        assertEquals(10, five.amount);
+        assertEquals(10, product.amount);
 
         //when2
-        five.times(3);
+        product = five.times(3);
 
         //then2
-        assertEquals(15, five.amount);
+        assertEquals(15, product.amount);
     }
 
 }
