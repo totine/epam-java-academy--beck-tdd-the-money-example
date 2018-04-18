@@ -1,2 +1,2 @@
-public class Expression {
+public interface Expression {
 }
