@@ -1,9 +1,15 @@
+import java.util.Objects;
+
 public abstract class Money {
 
     protected int amount;
 
-    public static Dollar dollar(int amount) {
+    static Dollar dollar(int amount) {
         return new Dollar(amount);
+    }
+
+    static Franc franc(int amount) {
+        return new Franc(amount);
     }
 
     public boolean equals(Object object) {
