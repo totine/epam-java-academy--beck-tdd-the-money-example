@@ -8,18 +8,12 @@ class Tests {
     public void testMultiplication() {
         //given
         Dollar five = new Dollar(5);
-
         //when
-        Dollar product = five.times(2);
-
         //then
-        assertEquals(10, product.amount);
-
+        assertEquals(new Dollar(10), five.times(2));
         //when2
-        product = five.times(3);
-
         //then2
-        assertEquals(15, product.amount);
+        assertEquals(new Dollar(15), five.times(3));
     }
 
     @Test
