@@ -34,7 +34,7 @@ public class Money {
         return new StringBuilder().append(amount).append(" ").append(currency).toString();
     }
 
-    Money plus(Money addend) {
-        return new Money(amount + addend.amount, currency);
+    Expression plus(Money addend) {
+        return null;
     }
 }
