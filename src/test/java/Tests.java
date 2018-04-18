@@ -30,16 +30,11 @@ class Tests {
 
     @Test
     public void testEquality() {
-        // given
-        Dollar five1 = new Dollar(5);
-        Dollar five2 = new Dollar(5);
-        Dollar six = new Dollar(6);
-
-        // when
-
         // then
-        assertTrue(five1.equals(five2));
-        assertFalse(five1.equals(six));
+        assertTrue(new Dollar(5).equals(new Dollar(5)));
+        assertFalse(new Dollar(5).equals(new Dollar(6)));
+        assertTrue(new Franc(5).equals(new Franc(5)));
+        assertFalse(new Franc(5).equals(new Franc(6)));
     }
 
 }
