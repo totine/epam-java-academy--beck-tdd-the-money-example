@@ -1,4 +1,3 @@
-import java.util.Objects;
 
 public abstract class Money {
 
@@ -18,5 +17,7 @@ public abstract class Money {
     }
 
     abstract Money times(int multiplier);
+
+    abstract String currency();
 
 }
