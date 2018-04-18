@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Tests {
 
     @Test
-    public void testMultiplication() {
+    public void testDollarMultiplication() {
         //given
         Dollar five = new Dollar(5);
         //when
@@ -14,6 +14,18 @@ class Tests {
         //when2
         //then2
         assertEquals(new Dollar(15), five.times(3));
+    }
+
+    @Test
+    public void testFrancMultiplication() {
+        //given
+        Franc five = new Franc(5);
+        //when
+        //then
+        assertEquals(new Franc(10), five.times(2));
+        //when2
+        //then2
+        assertEquals(new Franc(15), five.times(3));
     }
 
     @Test
