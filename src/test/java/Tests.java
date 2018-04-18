@@ -10,10 +10,10 @@ class Tests {
         Money five = Money.dollar(5);
         //when
         //then
-        assertEquals(new Dollar(10), five.times(2));
+        assertEquals(Money.dollar(10), five.times(2));
         //when2
         //then2
-        assertEquals(new Dollar(15), five.times(3));
+        assertEquals(Money.dollar(15), five.times(3));
     }
 
     @Test
