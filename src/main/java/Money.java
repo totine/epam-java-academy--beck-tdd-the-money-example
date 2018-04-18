@@ -5,11 +5,11 @@ public abstract class Money {
     protected String currency;
 
     static Dollar dollar(int amount) {
-        return new Dollar(amount);
+        return new Dollar(amount, "USD");
     }
 
     static Franc franc(int amount) {
-        return new Franc(amount);
+        return new Franc(amount, "CHF");
     }
 
     public boolean equals(Object object) {
