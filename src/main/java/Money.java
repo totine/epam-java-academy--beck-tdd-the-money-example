@@ -35,6 +35,6 @@ public class Money {
     }
 
     Expression plus(Money addend) {
-        return null;
+        return new Sum(this, addend);
     }
 }
