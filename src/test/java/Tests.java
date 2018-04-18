@@ -7,7 +7,7 @@ class Tests {
     @Test
     public void testDollarMultiplication() {
         //given
-        Dollar five = new Dollar(5);
+        Money five = Money.dollar(5);
         //when
         //then
         assertEquals(new Dollar(10), five.times(2));
