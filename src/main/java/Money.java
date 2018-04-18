@@ -30,4 +30,8 @@ public class Money {
         return currency;
     }
 
+    public String toString() {
+        return new StringBuilder().append(amount).append(" ").append(currency).toString();
+    }
+
 }
